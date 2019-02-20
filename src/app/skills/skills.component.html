@@ -1,0 +1,14 @@
+<div class="table">
+	<div class="cell">
+
+		<div *ngFor="let card of skills; let i = index">
+			<div class="row" *ngIf="i % 2 == 0 && i < skills.length-1">
+				<app-skill-card [skill]="skills[i]" class="col-sm-6"></app-skill-card>
+				<app-skill-card [skill]="skills[i+1]" class="col-sm-6"></app-skill-card>
+			</div>
+			<div *ngIf="i == skills.length-1" class="row justify-content-center">
+				<app-skill-card [skill]="skills[i]" class="col-sm-6"></app-skill-card>
+			</div>
+		</div>
+	</div>
+</div>

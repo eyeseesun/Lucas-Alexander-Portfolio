@@ -1,0 +1,91 @@
+<div class="menu-fixed">
+	<div class="topbar header"></div>
+
+	<div class="menu-800 white-background">
+		<div class="banner">
+			<div class="row">
+				<div class="col-sm-6">
+					<h1 class="green la">LA</h1>
+				</div>
+				<div class="col-sm-6">
+					<h2 class="green right name">Lucas Alexander</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container right nav-items">
+			<div class="row">
+				<a 
+					href="~lucasc/portfolio/#"
+					data-name="about" 
+					class="col-sm-3 nav-item" 
+					(click)='highlight("about")' 
+					(mouseenter)='navEnter("about")' 
+					(mouseleave)='navLeave("about")'>
+						<span id="about">about</span>
+				</a>
+				<a
+					href="~lucasc/portfolio/#"
+					data-name="portfolio" 
+					class="col-sm-3 nav-item" 
+					(click)='highlight("portfolio")' 
+					(mouseenter)='navEnter("portfolio")' 
+					(mouseleave)='navLeave("portfolio")'>
+						<span id="portfolio">portfolio</span>
+				</a>
+				<a
+					href="~lucasc/portfolio/#"
+					data-name="skills" 
+					class="col-sm-3 nav-item" 
+					(click)='highlight("skills")' 
+					(mouseenter)='navEnter("skills")' 
+					(mouseleave)='navLeave("skills")'>
+						<span id="skills">skills</span>
+				</a>
+				<a
+					href="~lucasc/portfolio/#"
+					data-name="contact" 
+					class="col-sm-3 nav-item" 
+					(click)='highlight("contact")' 
+					(mouseenter)='navEnter("contact")' 
+					(mouseleave)='navLeave("contact")'>
+						<span id="contact">contact</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile">
+		<div class="banner header">
+			<div class="row">
+				<div class="col-3">
+					<h1 class="green la">LA</h1>
+				</div>
+				<div class="col-9 green">
+					<div class="right" (click)="expandNav()">
+						<span>{{section}}</span>
+						<i class="fas fa-sort-down fa-4x"></i>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<div *ngIf="expanded" class="green mobile-nav">
+			<div id="about" class="banner from-top">
+				<a id="about-anchor" href="~lucasc/portfolio/#about-section" (click)="highlightMobileNav('about')"><p>about</p></a>
+			</div>
+			<div id="portfolio" class="banner from-top">
+				<a id="portfolio-anchor" href="~lucasc/portfolio/#portfolio-section" (click)="highlightMobileNav('portfolio')"><p>portfolio</p></a>
+			</div>
+			<div id="skills" class="banner from-top">
+				<a id="skills-anchor" href="~lucasc/portfolio/#skills-section" (click)="highlightMobileNav('skills')"><p>skills</p></a>
+			</div>
+			<div id="contact" class="banner from-top">
+				<a id="contact-anchor" href="~lucasc/portfolio/#contact-section" (click)="highlightMobileNav('contact')"><p>contact</p></a>	
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="topbar"></div>
+<div class="banner">
+	
+</div>

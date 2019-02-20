@@ -1,0 +1,56 @@
+.info {
+	font-size: 2em;
+	font-weight: bold;
+	color: #8d8d8d;
+}
+
+.contact-content {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.table {
+	display: table;
+	height: 1000px;
+}
+
+img {
+	float: right;
+}
+
+p {
+	margin: 0 0 0 65px;
+}
+
+@media only screen and (max-width: 800px) {
+	.table {
+		height: auto;
+	}
+
+	img {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.contact-content {
+		text-align: center;
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.info {
+		font-size: 1.25em;
+		width: 100%;
+	}
+
+	.cell {
+		display: block;
+	}
+}

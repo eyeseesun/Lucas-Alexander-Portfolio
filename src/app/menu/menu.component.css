@@ -1,0 +1,180 @@
+.menu-fixed {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+.banner {
+	left: -1px;
+	width: 80%;
+	max-height: 100px;
+	height: 10vh;
+	margin: 0 auto;
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+}
+
+.white-background {
+	width: 100%;
+	background-color: white;
+}
+
+.right {
+	float: right;
+}
+
+.topbar {
+	width: 100%;
+	height: 7px;
+	background-color: #32c6a1;
+}
+
+.la {
+	position: relative;
+	font-size: 4em;
+	top: 20px;
+}
+
+.name {
+	position: relative;
+	top: 40px;
+}
+
+.nav-items {
+	position: relative;
+	width: 400px;
+	right: 10%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.nav-item {
+	color: #8b8b8b;
+	line-height: 2;
+	transition: border-top 0.25s; /* vendorless fallback */
+    -o-transition: border-top 0.25s; /* opera */
+    -ms-transition: border-top 0.25s; /* IE 10 */
+    -moz-transition: border-top 0.25s; /* Firefox */
+    -webkit-transition: border-top 0.25s; /*safari and chrome */
+}
+
+.nav-item:hover {
+	cursor: pointer;
+	color: #32c6a1;
+	border-top: 4px solid #32c6a1;
+	transition: border-top 0.25s; /* vendorless fallback */
+    -o-transition: border-top 0.25s; /* opera */
+    -ms-transition: border-top 0.25s; /* IE 10 */
+    -moz-transition: border-top 0.25s; /* Firefox */
+    -webkit-transition: border-top 0.25s; /*safari and chrome */
+}
+
+span {
+	position: relative;
+	top: 4px;
+	transition: top .25s;
+}
+
+.nav-after {
+	color: #32c6a1;
+	border-top: 4px solid #32c6a1;
+}
+
+.span-after {
+	position: relative;
+	top: 0px;
+}
+
+.mobile-banner {
+	width: 100%;
+}
+
+.right {
+	float: right;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.menu-800 {
+	display: block;
+}
+
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+	.menu-800 {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.la {
+		font-size: 3em;
+		top: 10px;
+	}
+
+	a {
+		color: #32c6a1;
+		background-color: white;
+		border-bottom: 1px solid #ddd;
+	}
+
+	span {
+		position: relative;
+		font-size: 2em;
+		top: 0px;
+		margin: 0 15px 0 0;
+	}
+
+	p {
+		font-size: 2.5em;
+		position: relative;
+		top: 10px;
+	}
+
+	.banner {
+		width: 101%;
+		height: 75px;
+	}
+
+	.from-top {
+		position: relative;
+		top: -375px;
+		z-index: 0;
+		transition: top .25s;
+	}
+
+	.to-bottom {
+		top: 0px;
+	}
+
+	.row {
+		padding: 0 10px;
+		height: 100%;
+	}
+
+	.mobile-nav {
+		text-align: center;
+	}
+
+	.banner-after {
+		background-color: #fafafa;
+		transition: background-color 0.2s;
+	}
+
+	.header {
+		position: relative;
+		z-index: 1000;
+	}
+
+	.open-nav {
+		color: #12a681;
+	}
+}

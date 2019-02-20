@@ -1,0 +1,35 @@
+.header {
+	display: block;
+	margin: 25px auto 75px auto;
+	font-size: 3em;
+	font-weight: bold;
+	max-width: 700px;
+	width: auto;
+	text-align: center;
+	color: #32c6a1;
+}
+
+.inverse-header {
+	display: block;
+	margin: 25px auto 75px auto;
+	font-size: 3em;
+	font-weight: bold;
+	max-width: 700px;
+	width: auto;
+	text-align: center;
+	background-color: #32c6a1;
+	color: white;
+	padding: 0 0 10px 0;
+	border-radius: 2px;
+}
+
+span {
+	position: relative;
+	top: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+	.header {
+		margin: 25px auto;
+	}
+}

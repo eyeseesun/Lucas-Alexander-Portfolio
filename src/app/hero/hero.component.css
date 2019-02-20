@@ -1,0 +1,22 @@
+img {
+	width: 100%;
+	margin: 0 0 145px 0;
+}
+
+.hero-800 {
+	display: block;
+}
+
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+	.hero-800 {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+}

@@ -1,0 +1,14 @@
+<div class="skill-card">
+	<img src="~lucasc/portfolio/{{skill.src}}">
+	<div class="info">
+		<span>{{skill.name}}</span>
+		<br>
+		<span>Years: <span class="green">{{skill.years}}</span></span>
+		<br>
+		<span>Personal Rating: 
+			<i class="fas fa-star green" *ngFor="let a of ratingStars(skill.rating)"></i>
+			<i class="fas fa-star-half-alt green" *ngIf="skill.rating % 1 != 0"></i>
+			<i class="far fa-star green" *ngFor="let a of unratingStars(skill.rating)"></i>
+		</span>
+	</div>
+</div>
