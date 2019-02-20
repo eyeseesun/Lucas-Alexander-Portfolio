@@ -1,6 +1,6 @@
 # My Portfolio
 
-##How to run
+## How to run
 
 ```
 npm install
