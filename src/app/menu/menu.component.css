@@ -93,8 +93,22 @@ span {
 	float: right;
 }
 
+a {
+	color: #32c6a1;
+}
+
+i {
+	margin-left: 25px;
+}
+
 a:hover {
 	text-decoration: none;
+	color: #12a681;
+}
+
+.socials {
+	padding: 5px 92px 5px 0px;
+	display: inline-block;
 }
 
 .menu-800 {
