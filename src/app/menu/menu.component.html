@@ -3,25 +3,25 @@
 
 	<div class="menu-800 white-background">
 		<div class="banner">
-			<div class="row">
-				<div class="col-sm-6">
+			<div class="row full">
+				<div class="col-2">
 					<h1 class="green la">LA</h1>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-10">
 					<h2 class="green right name">Lucas Alexander</h2>
 					<div class="socials right name">
 						<a href="https://github.com/eyeseesun"><i class="fab fa-github fa-2x"></i></a>
 						<a href="https://www.facebook.com/lovelycloudy"><i class="fab fa-facebook-f fa-2x"></i></a>
 						<a href="https://codepen.io/eyeseesun"><i class="fab fa-codepen fa-2x"></i></a>
 						<a href="https://www.freecodecamp.org/eyeseesun"><i class="fab fa-free-code-camp fa-2x"></i></a>
-					</div>					
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container right nav-items">
 			<div class="row">
 				<a 
-					href="~lucasc/portfolio/#"
+					href="#"
 					data-name="about" 
 					class="col-sm-3 nav-item" 
 					(click)='highlight("about")' 
@@ -30,7 +30,7 @@
 						<span id="about">about</span>
 				</a>
 				<a
-					href="~lucasc/portfolio/#"
+					href="#"
 					data-name="portfolio" 
 					class="col-sm-3 nav-item" 
 					(click)='highlight("portfolio")' 
@@ -39,7 +39,7 @@
 						<span id="portfolio">portfolio</span>
 				</a>
 				<a
-					href="~lucasc/portfolio/#"
+					href="#"
 					data-name="skills" 
 					class="col-sm-3 nav-item" 
 					(click)='highlight("skills")' 
@@ -48,7 +48,7 @@
 						<span id="skills">skills</span>
 				</a>
 				<a
-					href="~lucasc/portfolio/#"
+					href="#"
 					data-name="contact" 
 					class="col-sm-3 nav-item" 
 					(click)='highlight("contact")' 
@@ -76,16 +76,16 @@
 		</div>
 		<div *ngIf="expanded" class="green mobile-nav">
 			<div id="about" class="banner from-top">
-				<a id="about-anchor" href="~lucasc/portfolio/#about-section" (click)="highlightMobileNav('about')"><p>about</p></a>
+				<a id="about-anchor" href="#about-section" (click)="highlightMobileNav('about')"><p>about</p></a>
 			</div>
 			<div id="portfolio" class="banner from-top">
-				<a id="portfolio-anchor" href="~lucasc/portfolio/#portfolio-section" (click)="highlightMobileNav('portfolio')"><p>portfolio</p></a>
+				<a id="portfolio-anchor" href="#portfolio-section" (click)="highlightMobileNav('portfolio')"><p>portfolio</p></a>
 			</div>
 			<div id="skills" class="banner from-top">
-				<a id="skills-anchor" href="~lucasc/portfolio/#skills-section" (click)="highlightMobileNav('skills')"><p>skills</p></a>
+				<a id="skills-anchor" href="#skills-section" (click)="highlightMobileNav('skills')"><p>skills</p></a>
 			</div>
 			<div id="contact" class="banner from-top">
-				<a id="contact-anchor" href="~lucasc/portfolio/#contact-section" (click)="highlightMobileNav('contact')"><p>contact</p></a>	
+				<a id="contact-anchor" href="#contact-section" (click)="highlightMobileNav('contact')"><p>contact</p></a>	
 			</div>			
 		</div>
 	</div>
